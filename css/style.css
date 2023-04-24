@@ -1,0 +1,392 @@
+.main{
+    width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(black,gray);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content:space-between;
+    z-index: 99;
+}
+.header img{
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    left: 20px;
+}
+.header nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+.header nav li{
+    list-style:none;
+    width: 200px;
+    display: inline-block;
+}
+.header nav li a{
+ color: white;
+ text-decoration: none;
+ font-size: x-large;
+}
+
+/* ###################################### */
+
+.background{
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.background .left{
+    width: 10%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.background .left .lefttheader{
+    width: 50%;
+    height: 100%;
+    background-color: #ffd700;
+}
+.background .left .leftimg svg{
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* transform: rotate(90deg); */
+}
+
+aside{
+    position: fixed;
+    z-index: 9;
+    width: 100px;
+    height: 50px;
+    left: 0;
+    top: 200px;
+}
+
+aside nav{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 0px 15px 15px 0px;
+    -webkit-border-radius: 0px 15px 15px 0px;
+    -moz-border-radius: 0px 15px 15px 0px;
+    -ms-border-radius: 0px 15px 15px 0px;
+    -o-border-radius: 0px 15px 15px 0px;
+    position: relative;
+    left: -40px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+img{
+    width: 40px;
+    height: 40px;
+}
+aside nav:hover{
+    left: 0;
+}
+/* ############################## */
+
+.tennis{
+    width: 80%;
+    height: 300px;
+    position: relative;
+    left: 10%;
+    top: -100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tennis .boxes{
+    background-color: white;
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    margin-block: auto;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    position: relative;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    /* clip-path: circle(0% at 50% 0%); */
+    overflow: hidden;
+
+}
+.tennis .boxes .circle{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(250 172 2/0.5);
+    clip-path: circle(50% at 0% 0%);
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    position: absolute;
+    left: -200px;
+}
+.tennis .boxes:hover .circle{
+    left: 0;
+}
+.tennis .boxes .circle span{
+    font-size: x-large;
+    margin-inline: 20px;
+}
+.tennis .boxes img{
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: inline-block;
+}
+/* ############################## */
+.head h1{
+    text-align: center;
+    color: rgb(91, 36, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head hr{
+    width: 40%;
+}
+/* ################ */
+.aboutus{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.aboutus .describe{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.aboutus .describe h1{
+    text-align: center;
+    color: rgb(91, 36, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutus .describe hr{
+    width: 40%;
+}
+.aboutus .describe .fitnessgoals{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+
+}
+.aboutus .describe .fitnessgoals h2{
+    color: rgb(91, 36, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutus .describe .fitnessgoals p{
+    color: rgb(17, 20, 184);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutus .describe .imagclube{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    overflow: hidden;
+}
+.aboutus .describe .imagclube img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 50px 0px 0px ;
+    -webkit-border-radius: 50px 50px 0px 0px ;
+    -moz-border-radius: 50px 50px 0px 0px ;
+    -ms-border-radius: 50px 50px 0px 0px ;
+    -o-border-radius: 50px 50px 0px 0px ;
+}
+.aboutus .describe .imagclube .cover{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+     position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 20%;
+    border-radius: 50px 50px 0px 0px ;
+    clip-path: circle(0% at 50% 50%);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-border-radius: 50px 50px 0px 0px ;
+    -moz-border-radius: 50px 50px 0px 0px ;
+    -ms-border-radius: 50px 50px 0px 0px ;
+    -o-border-radius: 50px 50px 0px 0px ;
+}
+.aboutus .describe .imagclube:hover .cover{
+    clip-path: circle(100% at 50% 50%);
+}
+
+/* ########################## */
+
+.schedule{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.schedule h1{
+    text-align: center;
+    color: rgb(91, 36, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.schedule hr{
+    width: 40%;
+}
+.schedule .mytable table{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.schedule .mytable table tbody tr:nth-last-of-type(odd){
+    background: gray;
+
+}
+/* ##################### */
+
+.news{
+    width:100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+ .news .boximgs{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.news .boximgs figure{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0px rgb(128, 119, 119);
+    display: flex;
+    justify-content: space-around;
+}
+.news .boximgs figure img{
+    width: 95%;
+    height: 70%;
+    text-align: center;
+    margin-top: 5px;
+}
+.news .boximgs figure figcaption{
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    margin-left: 50px;
+}
+/* .news .boximgs .newsimg {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0px rgb(128, 119, 119);
+    display: flex;
+    justify-content: space-around;
+}
+
+.news .boximgs .newsimg img{
+    width: 95%;
+    height: 80%;
+    text-align: center;
+    margin-top: 5px;
+}
+.news .boximgs .newsimg .txt{
+    width: 25%;
+    height: 20%;
+    position: absolute;
+    top: 300px;
+    margin-left: 20px;
+    display: inline-block;
+} */
+/* ############ */
+.media{
+    width: 80%;
+    height: 400px;
+    background-color: yellow;
+    position: relative;
+     top: 5px;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.media .img{
+    width:45%;
+    height: 100%;
+}
+.media .img img{
+    width:100%;
+    height: 100%;
+    margin-left: 10px;
+
+}
+.media .video{
+width: 45%;
+height: 100%;
+margin-right: 10px;
+}
+.media .video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* ###################### */
+.map{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
